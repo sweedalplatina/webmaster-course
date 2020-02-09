@@ -1,0 +1,384 @@
+/*Importing google font Roboto of weight 700 and 400*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700&display=swap');
+
+/*=============HOUSEKEEPING=============*/
+:root {
+	font-size: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+body, a{
+	color: #283B42;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*===============BASELINE=================*/
+
+body {
+	text-align: center;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+  margin: .5em 0;
+	word-break: keep-all; 
+	white-space: normal;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    line-height: 1;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    line-height: 1.1;
+}
+
+h1, .h1 {
+	font-size: 36px;
+    font-size: 2.25rem;
+}
+
+h2, .h2 {
+	font-size: 32px;
+    font-size: 2rem;
+}
+
+h3, .h3 {
+	font-size: 28px;
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+	font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h5, .h5 {
+	font-size: 21px;
+    font-size: 1.3125rem;
+}
+
+h6, .h6 {
+	font-size: 18px;
+    font-size: 1.125rem;
+}
+
+p, a {
+	font-size: 16px;
+    font-size: 1rem;
+}
+
+small {
+	font-size: 14px;
+    font-size: 0.875rem;
+}
+
+/*===================GRID===============*/
+
+/*defining the rows and columns*/
+.g-row, .g-row-fixed{
+    padding: 0 8px 24px;
+    padding: 0 .5rem 1.5rem; 
+    overflow:hidden;
+}
+
+.g-row{
+    margin:0;
+}
+
+.g-row-fixed{
+    margin:0 auto;
+}
+
+.g-col{
+    padding: 0 8px;
+    padding: 0 .5rem; 
+}
+
+.g-col ~ .g-col{
+    padding-top: 24px;
+    padding-top: 1.5rem; 
+}
+
+/*================COMPONENTS=============*/
+
+.c-img{
+    padding: 8px 8px 0;
+    padding:.5rem .5rem 0;
+}
+.c-site-title{
+    margin:0;
+    font-size:48px;
+    font-size:3rem; 
+    color:#E9ECEC;
+}
+
+.c-tagline{
+    font-size:16px;
+    font-size:1rem; 
+    font-weight:500;
+    color:rgba(233, 236, 236, 0.8); 
+    margin-bottom:16px;
+    margin-bottom:1rem;
+    margin-top:0;
+}
+
+.c-list{
+    text-align:left;
+}
+
+.c-button{
+    display:inline-block;
+    padding:.5em .75em;
+    border-radius:.25em;
+    background-color: #536E6E;
+    font-size:18px;
+    font-size:1.125rem;
+    text-decoration: none;
+    color:#E9ECEC;
+}
+
+[class*="c-line"]::after{
+    display:block;
+    content:'';
+    height: 1px; 
+    height:0.0625rem;
+    width:50%;
+    margin:.5em auto 0;
+    background-color: #8A9E9E;   
+}
+
+/*=========================Modules============= */
+
+.m-header{
+    background-color: #1d6a96;
+}
+.m-logo{
+    width:112px;
+    width:7rem;
+    height:48px;
+    height:3rem;
+}
+
+ /*=====================Banner==================*/
+
+ .m-banner{
+    height:80px;
+    height:5rem;
+    width:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*================Social - Media Bar============*/
+
+.m-social-media{
+    background-color: #283B42;
+    overflow: hidden; 
+}
+.m-social-media ul{
+    list-style:none;
+    padding:0;
+}
+
+.m-social-media li{
+    display:inline-block;
+}
+
+.m-social-media a{
+    padding: .5em;
+    font-size:24px;
+    font-size:1.5rem; 
+    color:#fff;
+}
+
+ /*==============Navigation Bar=============*/
+
+ .m-navigation{
+    display:none;
+    background-color: #aaa;
+}
+
+.m-navigation ul{
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:8px;
+    padding:.5rem;
+    list-style: none;
+}
+
+.m-navigation li{
+    display:block;
+}
+
+.m-navigation a{
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+/*================How we work============= */
+
+.m-work{
+    height: auto;  
+    width:auto;
+    padding:48px 16px 16px;
+    padding:3rem 1rem 1rem;   
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%),url(../img/image-4.jpg);
+    background-size:cover;     
+    background-position: center bottom;
+}
+
+/*================Techu===================*/
+
+.m-techu {
+    display:none; /* Set default display of this content to hidden */
+}
+
+ /*==============footer======================*/
+
+ .m-footer{
+    padding:0 16px;
+    padding:0 1rem;
+    background-color: #283b42;
+    color:  #d1dddb;
+    overflow:hidden;
+}
+
+.m-footer a{
+    color:  #d1dddb;
+}
+
+.m-footer p{
+    font-size: 14px; 
+    font-size: .875rem;
+}
+
+ /*=================THEME===================== */
+
+ h1, .h1, h2, .h2{
+     color:#1d6a96;
+ }
+
+ h3, .h3
+ {
+     color:#536E6E;
+ }
+
+ h4, .h4, h5, .h5, h6, .h6{
+     color:#6B6B6B;
+ }
+
+ /*==============Background Colors=============*/
+
+ .bg-lightblue {
+    background-color: #E9ECEC; 
+}
+
+/*==================MEDIA QUERIES===============*/
+
+ /*--Cell Phones:Landscape--*/
+ @media screen and (orientation:landscape) and (min-width:35.5rem){
+    /*Assign width for fixed Grid layout*/
+    .g-row-fixed{
+        max-width:568px;
+        max-width:35.5rem;
+    }
+    .m-work{   
+        background-size:cover;     
+        background-position: center center;
+    }
+}
+
+/* Cell Tablet:Portrait */
+@media screen and (orientation:portrait) and (min-width:48rem) { /*768PX*/
+    /*Assign width for fixed Grid layout */
+    .g-row-fixed{   
+        max-width:704px;   
+        max-width:44rem;  
+    }
+    /*display the techu block while user uses Tablets*/
+   .m-techu{
+       display:block;
+   }
+
+   .m-work{       
+    background-position: center bottom;
+    }
+} 
+
+/* Cell Tablet:Landscape */
+@media screen and (orientation:landscape) and (min-width:64rem){
+    /*Assign width for fixed Grid layout */
+    .g-row-fixed{
+        max-width:768px; 
+        max-width:48rem;
+    }
+
+    /*display Navigation bar*/
+    .m-navigation{
+       display: block;
+   }
+
+    /*display the techu block while user uses Tablets*/
+   .m-techu{
+       display:block;
+   }
+
+   .m-work{       
+    background-position: center bottom;
+    }
+}
+
+/* Cell Desktop:Landscape */
+@media screen and (orientation:landscape) and (min-width:75rem){
+    /*Assign fixed Grid layout */
+    .g-row-fixed{
+        max-width:1040px;
+        max-width:65rem;
+    } 
+
+    /*display Navigation bar*/
+    .m-navigation{
+       display: block;
+   }
+
+   /*Display services in columns for desktop mode*/
+    .m-services-flex{
+       display:flex;
+       justify-content: space-between;
+   }
+
+    /*display the techu block*/
+    .m-techu{
+       display:block;
+   }
+
+   .m-work{       
+    height:30vh;
+    background-position: center bottom;
+    }
+}

@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+body {
+	margin: 0;
+	background: #eee;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #002856;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 900;
+	font-family: 'Amiri', serif;
+}
+
+h1{
+	font-size: 2.25rem;
+	line-height: 1.1;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+p{
+	line-height: 1.4;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 0.5em 0.75em;
+	border: 0;
+	border-radius: 0.25em;
+	font-size: 1.25rem;
+	font-family: inherit;
+	font-weight: 400;
+	color: #353535;
+}
+
+input[type=radio] {
+	display: inline-block;
+}
+
+input[type=submit],
+input[type=reset] {
+	display: inline-block;
+	margin: 0 1rem 0 0;
+	padding: 0.75em;
+	background-color: #EE7601;
+	border: 0;
+	border-radius: 0.25em;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #353535;
+}
+
+legend {
+	display: block;
+	font-size: 1rem;
+	margin: 0 0 1rem;
+}
+
+label {
+	display: inline-block;
+	font-size: 1rem;
+	margin: 0 0 1rem;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fixed {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.input-row {
+	margin: 0 0 1rem;
+}
+
+@media screen and (min-width: 20rem) {
+	.container-fixed {
+		max-width: 20rem;
+	}
+}
+
+@media screen and (min-width: 40rem) {
+	.container-fixed {
+		max-width: 40rem;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	.container-fixed {
+		max-width: 60rem;
+	}
+}
+
+@media screen and (min-width: 70rem) {
+	.container-fixed {
+		max-width: 70rem;
+	}
+}
+
+/* Banner */
+
+.m-logo{
+	height: 2rem;
+    width: 7rem;
+}
+
+.m-banner{
+	display: flex;
+	padding: 1rem;
+}
+
+.m-title,.m-footer{
+	background-color: #EE7601;
+}
+
+.m-banner-img{
+	background-image: url("../images/the-league-of-heroes.jpg");
+	height: 50vh;
+	background-size:cover;
+	background-position: center bottom;
+}
+
+.welcome{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.m-navigation{	
+	margin-left: 60vw;
+}
+
+.m-navigation li{
+	list-style: none;
+	padding: 1rem;	
+}
+
+.m-navigation a{
+	color: #002856;
+}
+
+.card-container{
+	display:flex;
+	justify-content: space-between;
+	flex-flow:row wrap;
+    margin: auto;
+	padding: 1rem;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+  }
+  
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-card {
+	padding: 2px 16px;
+  }
+
+  .c-h2-card{
+	  margin-top: 0;
+	  padding: 1rem;
+	  text-align: center;
+	  background-color: #ff4433;
+	  color: #fff;
+  }
+
+
+/* Alerts */
+
+.alert {
+	width: 100%;
+	border-radius: 0.25rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: red;
+}
+
+.alert-text {
+	margin: 0;
+	color: white;
+	text-align: center;
+  }
+
+.m-footer{
+	text-align: center;
+	padding: 1rem;
+}

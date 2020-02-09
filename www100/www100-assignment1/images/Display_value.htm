@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/page2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Display:value</title>
+		<meta name="description" content="CSS Display property, CSS properties, CSS, Inline, Block, Inline-block">
+		<link href="./Display_value_files/css" rel="stylesheet">
+		<link href="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/css/page2.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header id="top">
+			<h1>Tutorial on using Display property</h1>
+			<nav>
+				<ul>
+					<li><a href="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/page1.html">Check out the same tutorial with a different CSS</a></li>
+				</ul>
+			</nav>	
+		</header>
+		
+		<main>
+			<p><b>CSS</b> stands for <b><em>Cascading Style Sheets</em></b>. It describes how the various HTML elements will be displayed.
+			 Layouts of multiple web pages can be controlled by a single CSS document.
+			 This tutorial is focused on the ‘Display’ property of CSS.</p>
+			 <p>Display property states the way in which an element is arranged. 
+			 Elements can be styled in various ways using the Display property. 
+			 For most of the elements default display value is usually ‘Inline’ or ‘block’.</p>
+			 
+			 <p>This tutorial would target the 3 commonly used values of Display property, namely:</p>
+			 <ul>
+			 	<li>Display: Inline</li>
+			 	<li>Display: Block</li>
+			 	<li>Display: Inline-block</li>
+			 </ul>
+			 <p>Display property in CSS is a very helpful tool, may it be with any of its associated value.</p>
+		</main>
+		
+		<div id="container">
+			<h2>Let’s go through each of these display values in details</h2>
+			<article>
+				<h3>Display: Inline</h3>
+				<p>"Display: Inline" property on elements do not cause a line break. Once an element is displayed as an Inline element,  
+				it is impossible to add height and width to it.</p>
+				<p>Let us consider an example to understand the "Display: Inline" property better,</p>
+				
+				<p>Code snippet shown below has 3 &lt;p&gt; tags with some content. </p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-code.jpg" alt="code snippet for explaining display:inline property" title="code snippet for explaining display:inline property">
+
+				<p>As per the default property of &lt;p&gt; tags, they are displayed with a line break.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-result1.jpg" alt="paragraph&#39;s displayed with a line break" title="paragraph&#39;s displayed with a line break">
+
+				<p>Now let's Style the &lt;p&gt; tag with CSS's Display: Inline property and link the stylesheet to the HTML document.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-css.jpg" alt="CSS applied on paragraph tag" title="CSS applied on paragraph tag">
+				<br>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-code2.jpg" alt="linking the stylesheet to the HTML document" title="linking the stylesheet to the HTML document">
+
+				<p> As shown in the screenshot below, all the &lt;p&gt; tags appear inline as styled in the CSS.
+				 However, height and width show no impact.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/display-inline.jpg" alt="elements lined up inline" title="elements lined up inline">
+			</article>
+			
+			<article>
+				<h3>Display: Block</h3>
+					<p>Applying "Display: block" property to any element causes a line break and the element will be 
+					displayed as a block level element. Height and width can be given to these elements.</p>
+
+					<p>Let us consider the below example to understand "Display: block" property in detail,</p>
+
+					<p>Code snippet shown below has a &lt;span&gt; tag within a &lt;p&gt;.</p>
+					<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/block-code.jpg" alt="code snippet for explaining display:block property" title="code snippet for explaining display:block property">
+
+					<p>As we know &lt;span&gt; is an inline element by default. Hence, content in span will not cause a line break.</p>
+					<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/block-result1.jpg" alt="Inline display of text" title="Inline display of text">
+
+					<p>Now let's style the &lt;span&gt; tag with CSS's Display: block property</p>
+					<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/block-css.jpg" alt="apply display block property" title="apply display block property">
+					 
+					<p>&lt;span&gt; tag causes a line break and acts like a block level element after being styled as "Display: block". Hence, the 
+					content in the &lt;span&gt; tag is displayed in the next line.</p>
+					<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/block-result.jpg" alt="Element acts like block level" title="code snippet explaining display:block property">
+			</article>
+			
+			<article id="right">
+				<h3>Display: Inline-block</h3>
+				<p>Applying the "Display: Inline-block" property to an element makes it act like an Inline element. Such elements do not cause a
+				line break. However, we can give height and width to these elements like how we treat the block level elements. Basically, 
+				"Display: Inline-Block" is a combination of both "Display: Inline" and "Display: Block" properties.</p>
+
+				<p>Let us consider an example to learn about "Display: Inline-block" property in detail,</p>
+
+				<p>Code snippet shows an unordered list with 3 list items. Namely, Home, About and Contact.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-block-code.jpg" alt="code snippet for explaining display:Inline-block property" title="code snippet for explaining display:Inline-block property">
+
+				<p>Unordered List is displayed with list items placed one below the other.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-block-result1.jpg" alt="unordered list" title="unordered list">
+
+				<p>Styling the list items with "Display: Inline-block" propert and liking the stylesheet with the HTML document</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-block-css.jpg" alt="css snippet applying Inline-block display value" title="css snippet applying Inline-block display value">
+				<br>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-block-style.jpg" alt="linking CSS with HTML" title="linking CSS with HTML">
+
+				<p>List items get lined up in a single line like Inline elements. With the provided height and width.</p>
+				<img src="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/images/inline-block-display.jpg" alt="List becomes inline with given height and width" title="List becomes inline with given height and width">
+
+			</article>
+		</div>
+
+		<div id="navigation">
+		<p><a href="file:///Users/rolsonquadras/Sweedal/Seneca%20Documents/Seneca%20work/www100/www100-assignment2/page2.html#top">Click here go to the top of the page</a></p>
+		</div>
+		
+		<footer>
+			<small>©Copyright 2019 Sweedal Renila Platina</small>
+		</footer>
+		
+	</body></html>

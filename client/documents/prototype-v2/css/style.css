@@ -1,0 +1,54 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    background-color:#FFF;
+    color:#000;
+}
+
+.bg-custom{
+    background-color: #000; 
+}
+
+.bgi-banner{
+    background-image: url(../img/banner-final2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center bottom;
+}
+
+.bg-yellow{
+    background-color: #FFCC66;
+}
+
+.tx-yellow{
+    color: #FFCC66;
+}
+
+.bg-image{
+    height:auto;  
+    max-width:100%;
+    background-image: url(../img/yellow-plain.png), url(../img/services2.jpg);
+    background-blend-mode: multiply;
+    background-size:cover;     
+    background-position: center bottom;
+}
+
+.logo img{
+    width:auto;
+    height:48px;
+    height:3rem;
+}
+
+/* ==========MEDIA QUERY========== */
+
+@media screen and (orientation:landscape) and (min-width:64rem){
+    h1{
+        font-size:48px;
+        font-size:3rem;
+    }
+
+    .tx-head{
+        font-size:24px;
+        font-size:1.5rem;
+    } 
+}

@@ -1,0 +1,105 @@
+body{
+	color: #69454F;
+	font-family: 'Roboto Slab', serif;
+	margin:0;
+}
+
+header, h2, footer{
+	padding:1em;
+	background-color:#D7CBBD;
+}
+
+header{
+	font-family: cursive;
+	text-align: left;
+	-webkit-transition: 2s;/*CSS validation error seen while validating the code.
+	 But, I am okay with this as it's a vendor extension to support older browser versions*/
+	transition: 2s; 
+	border-bottom: .4em solid #C1893F;
+}
+
+header:hover{
+	background-image:url(../images/asfalt-dark.png);
+	transition: 2s; 
+}
+
+h1{
+	font-size:3em;
+	letter-spacing: 3px;
+	font-weight: 900;
+}
+
+h2, h3{
+	border-radius: 2em / 5em;
+}
+
+h3{
+	text-align: center;
+	background-color:#D7CBBD;
+	padding: .7em;
+}
+
+nav a{
+	text-shadow: 5px 3px 8px #3C1832;
+}
+
+nav li{
+	list-style: none;
+	padding: .25em 1em;	
+}
+
+main, #container{
+	max-width:100%;
+	padding: 2em;
+	margin:auto;
+}
+
+main{
+	display:block;
+	font-size: 1.1em;
+	border-bottom: .25em solid #C1893F;
+}
+
+main ul li{
+	list-style-type: square;
+}
+
+article{
+	display: inline-block;
+	max-width: 30.9%;
+	padding-right: 1.45%;
+	vertical-align:top;
+}
+
+article:hover{
+    padding: .5em;
+    max-width:32%;
+    border-radius: 1.5em;
+    border: .1em solid #69454F;
+    background-color: #ECE6DF;
+}
+
+#right{
+    padding-right: 8px;
+    max-width: 33%;
+}
+
+img{
+	max-width: 100%;
+	margin:auto;
+}
+
+#navigation{
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+  width: 300px;
+  background-color: rgba(215,203,189,.1);
+}
+
+footer{
+	color: #69454F;
+    text-align: center;
+    font-weight: 700;
+    background-image:url(../images/asfalt-dark.png);
+}

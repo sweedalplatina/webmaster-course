@@ -1,0 +1,20 @@
+/*
+ Theme Name:   Mesmerize Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Mesmerize Child Theme
+ Author:       Sweedal Platina 
+ Author URI:   http://example.com
+ Template:     mesmerize
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, right-sidebar, responsive-layout, colourful
+ Text Domain:  mesmerizechild
+*/
+
+footer{
+    color:#000;
+    text-align: center;
+    padding:16px 0;
+    padding: 1rem 0;
+}

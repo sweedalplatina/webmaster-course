@@ -1,0 +1,51 @@
+body {
+	background: #EAEAEA;
+	color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#art-title{
+    font-family: 'BioRhyme', serif;
+}
+#content {
+    background: #FFF;
+	border: 1px solid #CCC;
+}
+#content h1, #content h2 {
+    border-bottom: 1px solid #333;
+}
+img{
+    border-radius: 4px;
+}
+#gallery a:hover img {
+    opacity: 0.8;
+}
+#jumbo1{
+    background-color: rgb(142, 103, 103);
+    background-image: url(../images/macaron.jpg);
+    background-size: cover;
+    color:black;
+    border-radius: 4px;
+    font-family: 'BioRhyme Expanded', serif;
+}
+#jumbo1 h1{
+    border: none;
+}
+#jumbo2{
+    background-color: #2B1823;
+    color:white;
+    width: 100%;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+#content h2#art-title{
+    border: 1px solid #ccc;
+}
+.bg-dark{
+    background-color: #2B1823 !important;
+}
+
+iframe{
+    border: 0px;
+}

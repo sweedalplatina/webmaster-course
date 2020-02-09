@@ -1,0 +1,274 @@
+/*  
+This stylesheet uses CSS variables which are not supported in Internet Explorer. 
+https://caniuse.com/#feat=css-variables 
+
+This is not SASS.
+*/
+
+:root{
+    --color-dark: #0c161a;
+    --color-med: #ddd;
+    --color-light: #f4f4f4;
+    --color-white: #f8f8ff;
+
+    --accent-lt: #a5e8f1;
+    --accent-md: #afccea;
+    --accent-dk: #1d333b;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-heading: 'Syncopate', sans-serif;
+    --font-weight-heading: 400;
+}
+
+h1, h2, h3, h4,h5,h6{
+    font-weight: var(--font-weight-heading);
+}
+h1{
+    font-family: var(--font-heading);
+}
+body{
+    font-family: var(--font-primary);
+    font-weight: 500;
+    background-color: var(--color-med);
+}
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+}
+/*  NAVIGATION BAR AND HEADER */
+header{
+    border: 1px solid var(--color-dark);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.brand{
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+.top-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+.top-navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.top-navbar a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+}
+.top-navbar a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-lt);
+    color:var(--color-med);
+}
+.hero-img{
+    background-color:var(--accent-dk);
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-img img{
+    min-width: 100%; 
+}
+.message{
+    font-family: var(--font-primary);
+    text-align: center;
+}
+/*  CURRENT PROJECTS SECTION */
+#projects{
+    background-color: var(--color-light);
+    padding: 1rem;
+}
+.card-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 0.2rem;
+    flex-wrap: wrap;
+}
+.card-holder img{
+    min-width: 100%;
+}
+.card{
+    flex-basis: 33%;
+
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    background-color: var(--color-med);
+    text-decoration: none;
+}
+.card:hover{
+    filter: grayscale(1);
+}
+.card-text{
+    padding: 0 0.4rem;
+}
+.card-text:hover{
+    opacity: 0.75;
+}
+
+/*  CAREERS SECTION  */
+#careers{
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.career-col{
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding: 1.4rem;
+    line-height: 1.6rem;
+}
+.left-col{
+    background-color: var(--color-white);
+}
+.left-col a{
+    color: var(--accent-dk);
+}
+.left-col a:hover{
+    color: var(--accent-lt);
+    text-decoration-color: var(--accent-dk);
+}
+.right-col{
+    background-color: var(--accent-md);
+}
+
+/*  BANNER WITH CALL TO ACTION */
+.banner{
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    padding: 1rem;
+    color: var(--color-white);
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner{
+    text-shadow: 1px 1px var(--color-dark);
+}
+.banner-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  BUTTONS */
+.call-to-action-btn{
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    color: var(--color-white);
+    border-radius: 4px;
+    border: 2px solid var(--color-dark);
+    }
+.call-to-action-btn:hover{
+    text-decoration: underline;
+    text-decoration-color:  var(--accent-lt);
+    background-color: rgba(0, 0, 0, 1);
+}
+/*   CONTACT SECTION */
+#contact{
+    background-color: var(--color-light);
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+}
+
+.map{
+    text-align: center;
+}
+.map h3{
+    text-align: left;
+}
+iframe{
+    border: 1px solid var(--accent-lt);
+    border: 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    cursor: pointer;
+}
+/*  FOOTER */
+footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer a{
+    color: var(--accent-lt);
+}
+footer .la{
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--color-white);
+}
+.pipe{
+    font-size: 1.6rem;
+}
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width: 720px){
+    .top-navbar{
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 0.5rem 2rem;
+    }
+    .top-navbar ul{
+
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+    .top-navbar li{
+        padding: 0.2em 0;
+        border-top: 1px solid var(--color-white);
+
+    }
+    .top-navbar li:last-child{
+        border-bottom: 1px solid var(--color-white);
+
+    }
+    .card-holder{
+        flex-direction: column;
+    }
+    .card{
+        flex-grow: 1;
+    }
+    .hero-text{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .pipe{
+        display: none;
+    }
+}

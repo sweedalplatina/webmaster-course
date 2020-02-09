@@ -1,0 +1,268 @@
+/*=============HOUSEKEEPING=============*/
+
+:root {
+	font-size: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+	font-size: 1rem;
+	font-weight: 400;
+    line-height: 1.4;
+}
+
+body, a{
+	color: #283B42;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/*===============BASELINE=================*/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+  margin: .5em 0;
+	word-break: keep-all; 
+	white-space: normal;
+}
+
+h1, .h1{
+    font-family:'Playfair Display', serif;
+    font-weight: 700;
+} 
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    line-height: 1;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    line-height: 1.1;
+}
+
+h1, .h1 {
+	font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h2, .h2 {
+	font-size: 21px;
+    font-size: 1.3125rem; 
+}
+
+h3, .h3 {
+	font-size: 18px;
+    font-size: 1.125rem;
+}
+
+h4, .h4 {
+	font-size: 16px;
+    font-size: 1rem;
+}
+
+h5, .h5 {
+	font-size: 14px;
+    font-size: 0.875rem;
+}
+
+h6, .h6 {
+	font-size: 12px;
+    font-size: 0.75rem;
+}
+
+p, a {
+	font-size: 14px;
+    font-size: 0.875rem;
+}
+
+small {
+	font-size: 14px;
+    font-size: 0.875rem;
+}
+
+/*===================GRID===============*/
+
+/*defining the rows and columns*/
+.g-row, .g-row-fixed{
+    padding: 0 8px 24px;
+    padding: 0 .5rem 1.5rem; 
+    overflow:hidden;
+}
+
+.g-row{
+    margin:0;
+}
+
+.g-row-fixed{
+    margin:0 auto;
+    max-width: 1024px;
+}
+
+.g-col{
+    padding: 0 8px;
+    padding: 0 .5rem; 
+}
+
+.g-col ~ .g-col{
+    padding-top: 24px;
+    padding-top: 1.5rem; 
+}
+    
+ol li {
+    margin-left:20px;
+    margin-left:1.25rem;
+    font-size: 18px; 
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/*=================COMPONENTS=========*/
+
+.c-list{
+    list-style: none;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.c-list a{
+    color:blue;
+    text-decoration: underline;
+}
+
+.c-date{
+    font-size:14px;
+    font-size:0.875rem;
+}
+
+[class*="c-line"]::after{
+    display:block;
+    content:'';
+    height: 3px; 
+    height:0.1875rem;
+    width:20%;
+    margin:.5em auto 0;
+    background-color: #283B42;   
+}
+
+.progress-bar{
+    color:#283B42;
+}
+
+/*=================MODULES============ */
+
+.m-banner{
+    text-align:center;
+    margin:0;
+    padding:16px 0;
+    padding:1rem 0;
+    border-radius:0 0 16px 16px;
+    border-radius:0 0 1rem 1rem;
+}
+
+.m-logo{
+    display:flex;
+    justify-content: space-between;
+}
+
+.m-name{
+    display:flex;
+    justify-content: space-between;
+}
+
+.m-logo img {
+	max-width: 30%;
+    height: 100px;
+    margin:0 ;
+    padding: 16px 0;
+    padding: 1rem 0;
+}
+
+.m-production{
+    margin-bottom: 1em;
+}
+
+.m-footer{
+    padding:16px;
+    padding:1rem;
+    text-align:center;
+    border-radius:16px 16px 0 0;
+    border-radius:1rem 1rem 0 0;
+}
+
+/*==========BANNER-IMAGE=========*/
+
+.c-banner-image{
+    padding:48px 16px 16px;
+    padding:3rem 1rem 1rem;   
+    background-size:cover;     
+    background-position: center center;
+}
+
+/*==========BACKGROUND COLOUR======= */
+
+.bg-beige{
+    background-color: #faf2eb;
+}
+
+.bg-lightgrey{
+    background-color: #D3D3D3;
+}
+
+/*========MEDIA QUERY=======*/
+
+/*--Cell Phones:Landscape--*/
+@media screen and (orientation:landscape) and (min-width:35.5rem){
+    /*Assign width for fixed Grid layout*/
+    .g-row-fixed{
+        max-width:568px;
+        max-width:35.5rem;
+    }
+}
+
+/* Cell Tablet:Portrait */
+@media screen and (orientation:portrait) and (min-width:48rem) { /*768PX*/
+    /*Assign width for fixed Grid layout */
+    .g-row-fixed{   
+        max-width:704px;   
+        max-width:44rem;  
+    }
+} 
+
+/* Cell Tablet:Landscape */
+@media screen and (orientation:landscape) and (min-width:64rem){
+    /*Assign width for fixed Grid layout */
+    .g-row-fixed{
+        max-width:768px; 
+        max-width:48rem;
+    }
+}
+
+/* Cell Desktop:Landscape */
+@media screen and (orientation:landscape) and (min-width:75rem){
+ /*Assign fixed Grid layout */
+ .g-row-fixed{
+     max-width:1040px;
+     max-width:65rem;
+ } 
+
+ .c-name{
+        font-size: 16px;
+        font-size: 1rem;
+ }
+}
+

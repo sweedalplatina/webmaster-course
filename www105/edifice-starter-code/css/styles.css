@@ -1,0 +1,47 @@
+.container{
+    height: 500px;
+}
+
+.the_slider{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.the_slider .s_slide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.the_slider .s_slider_container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.the_slider .s_slider_container:active{
+    cursor: -webkit-grabbing
+}
+
+.the_slider .s_slide_0{
+    background-image: url("../img/slider1.jpg");
+}
+
+.the_slider .s_slide_1{
+    background-image: url("../img/slider2.jpg");
+}
+
+.the_slider .s_slide_2{
+    background-image: url("../img/slider3.jpg");
+}
+
+.the_slider .s_slide_3{
+    background-image: url("../img/slider4.jpg");
+}
+

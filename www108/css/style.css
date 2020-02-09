@@ -1,0 +1,45 @@
+body{
+    color:#321E17;
+    background-color: #fff;
+}
+
+h2{
+    color: #7E212C;;
+}
+
+a{
+    text-decoration: underline;
+    color: #4415F4;
+}
+
+.tx-heading{
+    color: #7E212C;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+  
+th {
+    text-align: center;
+    background-color: #EEA696;
+}
+
+tr{
+    background-color: #F7E0DB;
+}
+
+#myChart, #container-chart2, #chartContainer{
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.bg-custom{
+    background-color: #ccd3d9;
+}
+

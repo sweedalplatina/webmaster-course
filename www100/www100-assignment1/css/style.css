@@ -1,0 +1,168 @@
+body {
+	font-family: 'Source Serif Pro', serif;
+ 	background-color: black;
+	background-image: url("../images/holi.jpg");
+	background-repeat: repeat-y;
+	color: white;
+	margin: 0;
+	font-size: 1.15em;
+}
+
+header{
+	background-color: black;
+	background-image: url("../images/holi.jpg");	
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+main{
+	display: block;
+}
+
+h1{
+	font-size: 2.5em;
+	text-shadow: 3px 3px red;
+	letter-spacing: 10px;
+}
+
+nav a {
+	text-decoration: none; /*remove underline in links in nav*/	
+	color:sandybrown;
+}
+ 
+nav ul {
+	list-style: none; 
+	text-align: center;
+	word-spacing: 40px;
+	font-size: 1.5em;
+	border-bottom: 10px ridge Tomato;
+}
+
+nav li {
+	display: inline; /*have all list items in a single line*/
+}
+
+
+img{
+	max-width: 100%;
+	border-radius: 50%;
+	display: block; 
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 1em;
+    width: 50%; 
+}
+ 
+#quote{		
+	max-width: 900px;  
+	margin: auto;
+	background: white;
+	padding-top: 5px;
+  	padding-right: 1px;
+  	padding-bottom: 5px;
+  	padding-left: 40px;
+  	border: 4px dashed Tomato; 
+ 	text-shadow: 3px 2px yellow; 
+	color:red;
+ 	font-size: 1.25em;
+}
+ 
+
+h2{
+	max-width: 900px;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size:26px;
+	padding-bottom: .5em;
+}
+
+h3{
+	max-width: 900px;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	font-size:21px;
+	margin:5px;
+
+}
+
+h4{
+	max-width: 900px;
+	text-align:left;
+	font-size:18px;
+}
+
+h5{
+	max-width: 900px;
+	text-decoration:underline;
+	font-size:15px;
+}
+
+#fees{
+	max-width: 450px;
+	margin: auto;
+	color:black;
+	padding-top: 5px;
+  	padding-right: 1px;
+  	padding-bottom: 5px;
+  	padding-left: 40px;
+  	border-top: 10px ridge Tomato;
+  	border-width: 5px;
+  	border-radius: 20px;
+  	background: linear-gradient(to bottom, #ffb3a5 15%, #ffffff 100%);
+}
+
+
+.more{
+	max-width: 900px;
+	margin: auto;
+	color:black;
+	padding-top: 5px;
+  	padding-right: 20px; 
+  	padding-bottom: 5px;
+  	padding-left: 30px; 
+	border-top: 10px ridge Tomato;
+  	border-width: 5px;
+  	border-radius: 20px;
+  	background: linear-gradient(to bottom, #ffb3a5 15%, #ffffff 100%);
+}
+
+#table{
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+td{
+	padding-right: 1em;
+}
+
+.timeline{
+	list-style-type:lower-roman;
+}
+
+
+#address{
+	text-align:center;
+}
+
+ 
+footer {
+	background-color: Tomato;
+	text-align: center;
+	padding: 1em 0;
+	margin-top: 1em;
+	font-weight: 900;
+} 
+
+
+
+
+
+
+
+
+
+
+ 
+

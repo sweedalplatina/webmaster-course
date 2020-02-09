@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700%7cSyncopate:400,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slicarousel.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Edifice | Architects</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="top-navbar">
+                <p class="brand">Edifice</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#careers">CAREERS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="container hero-img" id="heroimg">
+                <div class="the_slider">
+                </div>
+            </div>
+
+            <div class="hero-text">
+
+                <h1>Edifice</h1>
+                <p>Modern Architectural Solutions for Urban Dilemmas</p>
+            </div>
+
+        </header>
+        <section id="projects">
+            <h2>CURRENT PROJECTS</h2>
+            <div class="card-holder gallery">
+                <a href="img/project1.jpg" class="card" data-caption="EUROPE">
+                    <!-- href link to large image, src links to thumbnail image -->
+                    <article>
+                        <img src="img/project1.jpg" alt="EDIFICE project in Europe" width="400" height="266">
+                        <div class="card-text">
+                            <h3>EUROPE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut quod blanditiis
+                                assumenda, tenetur ipsum.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="img/project2.jpg" class="card" data-caption="ASIA">
+                    <article>
+                        <img src="img/project2.jpg" alt="EDIFICE project in Asia" width="400" height="266">
+                        <div class="card-text">
+                            <h3>ASIA</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente temporibus
+                                recusandae aspernatur. Enim, in?</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="img/project3.jpg" class="card" data-caption="AMERICAS">
+                    <article>
+                        <img src="img/project3.jpg" alt="EDIFICE project in America" width="400" height="266">
+                        <div class="card-text">
+                            <h3>AMERICAS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus cupiditate fuga,
+                                veniam porro assumenda.</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner-text">
+                <h2>LOOKING FOR THE EXPERTS?</h2>
+                <p>You're in luck.</p>
+            </div>
+            <div class="banner-link">
+                <p><a href="#" class="call-to-action-btn">Start a project with us <span
+                            class="la la-long-arrow-right"></span></a></p>
+            </div>
+        </section>
+        <section id="careers">
+
+            <div class="career-col left-col">
+                <h2>CAREERS</h2>
+                <p>Our success depends on our people. If you want to make a real difference in the world, consider a
+                    future with us.</p>
+
+                <ul>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="recent-graduates.html">Recent Graduates</a></li>
+                    <li><a href="experienced-hires.html">Experienced Hires</a></li>
+                </ul>
+            </div>
+            <div class="career-col right-col" id="opportunity">
+
+                <h3>DEVELOP YOUR CAREER WITH US</h3>
+                <p>Join us at EDIFICE if you want to be a part of the solution, to challenge your limits, and to work
+                    with exceptional people accomplishing great things.</p>
+                <p><a href="#" class="call-to-action-btn">Apply Today <span class="la la-long-arrow-right"></span></a>
+                </p>
+
+            </div>
+
+        </section>
+        <section id="contact">
+            <h2>CONTACT US</h2>
+            <div class="card-holder">
+                <div class="form contact-item">
+                    <h3>Subscribe for Updates</h3>
+                    <!-- <form action="#" method="post" id="contact-form"> -->
+                    <form action="#" method="post" id="contact-form">
+                        <p>
+                            <label for="username">Name: </label><br>
+                            <input type="text" size="26" name="name" id="username">
+                            <span id="error-username"></span>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label><br>
+                            <input type="text" size="26" name="email" id="email">
+                            <span id="error-email"></span>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="consent" id="consent">
+                            <label for="consent">I want to receive updates.</label>
+                            <span id="error-consent"></span>
+                        </p>
+                        <p>
+                            <button type="submit" class="call-to-action-btn">Sign Up <span
+                                    class="la la-long-arrow-right"></span></button>
+                        </p>
+                    </form>
+                </div>
+                <div class="map contact-item">
+                    <h3>Head Office Location</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4331.878952954338!2d-79.3714056209363!3d43.849628972473326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sca!4v1562877231781!5m2!1sen!2sca"
+                        width="350" height="250" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2019</p>
+            <p class="pipe">&vert;</p>
+            <p>8 The Seneca Way, Markham, Ontario, L3R 5Y1</p>
+            <p class="pipe">&vert;</p>
+            <p><a href="https://www.senecacollege.ca">www.senecacollege.ca</a></p>
+            <p>
+                <a href="https://www.facebook.com"><span class="la la-facebook"></span></a>
+                <a href="https://www.twitter.com"><span class="la la-twitter"></span></a>
+                <a href="https://www.linkedin.com"><span class="la la-linkedin"></span></a>
+                <a href="https://www.instagram.com"><span class="la la-instagram"></span></a>
+            </p>
+        </footer>
+    </div>
+    <!-- All images from Unsplash: 
+        Mathew Schwartz, Clarisse Croset, Zachary Xu, Kirill
+        Adrian Cuj, Alexander Tsang, Natalya Letunova 
+        Sven Mieke, Guillaume Issaly
+
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/slicarousel.js"></script>
+    <!-- <script src="js/fslightbox.js"></script> -->
+    <script src="js/baguetteBox.min.js" async></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

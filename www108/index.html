@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pup Rescue Group | We are a doggo rescue</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: #ccd3d9;">
+        <div class="container container-fluid">
+            <header>
+                <h1 class="text-center"><span class="tx-heading">Paws</span> Rescue Group</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+        <main>
+            <p>Paws is a doggo rescue and shelter. We rescue the dogs and provide them shelter till they get adopted
+                and find a new family to live with.</p>
+            <p>DataSet of Annual expenditure for the Dog Rescue and Shelter can be viewed <a
+                    href="https://torontohumanesociety.com/pdfs/AnimalTalk-June_12_-_Update_v03.pdf">here</a>.</p>
+            <p>Paws could use the below data visualization charts for depicting it's annual expenditure and ask
+                for donations. Charts will clearly show why the donations are so important for the organization.</p>
+            <ul>
+                <li>ChartJS</li>
+                <li>HighCharts</li>
+                <li>CanvasJS</li>
+            </ul>
+        </main>
+
+        <!-- Chartjs -->
+        <div class="container container-fluid">
+            <h2>Chart js</h2>
+            <p>You can go through the Chartjs Website: <a href="https://www.chartjs.org/docs/latest">here</a></p>
+            <table>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Findings</th>
+                </tr>
+                <tr>
+                    <td>Dependency on jQuery</td>
+                    <td>No, Chartjs is based on JavaScript and requires a custom CDN for Chartjs</td>
+                </tr>
+                <tr>
+                    <td>License</td>
+                    <td>MIT License, Free to use</td>
+                </tr>
+                <tr>
+                    <td>Existing Projects</td>
+                    <td>To view samples of existing projects/charts using ChartJS, click <a
+                            href="https://github.com/chartjs/Chart.js/tree/master/samples">here</a>.</td>
+                </tr>
+                <tr>
+                    <td>For how long Has it been around</td>
+                    <td>For more than 4 years now. It is actively updated. Thier github
+                        community has all the help required. Click here for help <a
+                            href="https://github.com/chartjs/Chart.js">Github Link</a></td>
+                </tr>
+                <tr>
+                    <td>SVG/Canvas</td>
+                    <td>Canvas</td>
+                </tr>
+                <tr>
+                    <td>How is the documentation</td>
+                    <td>Chartjs has an excellent documentation with clear instructions.</td>
+                </tr>
+                <tr>
+                    <td>What types of charts are available</td>
+                    <td>It has 8 types of charts. Please refer the documenation for details.</td>
+                </tr>
+                <tr>
+                    <td>Ease of implementation? </td>
+                    <td>Chartjs has clear instructions on implementing the visualizations. Hence, using
+                        them is really easy.</td>
+                </tr>
+                <tr>
+                    <td>Ease to customize? </td>
+                    <td>Chartjs provides a list of customization options. Please refer the documentation.</td>
+                </tr>
+                <tr>
+                    <td>Recommendation to the client</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+            <div class="chart-container" style="position: relative; height:50vh; width:80vw">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Highlight charts -->
+        <div class="container container-fluid">
+            <h2>Highcharts</h2>
+            <p>You can view the Official website:<a href="https://www.highcharts.com/products/highcharts/">here</a></p>
+            <table>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Findings</th>
+                </tr>
+                <tr>
+                    <td>Dependency on jQuery</td>
+                    <td>No, Chartjs is based on JavaScript and requires a custom CDN</td>
+                </tr>
+                <tr>
+                    <td>License</td>
+                    <td>Highcharts for a personal website, a school site or a non-profit
+                        organization is free <a href="https://shop.highsoft.com/highstock">Click here</a>. Commercial
+                        License is a <a href="https://shop.highsoft.com/highcharts">paid</a> version.</td>
+                </tr>
+                <tr>
+                    <td>Existing Projects</td>
+                    <td>HighChart's clients include GE, Stack overflow, Facebook, Mastercard etc. You can view
+                        HighCharts projects <a href="https://www.highcharts.com/blog/snippets/">here</a>.</td>
+                </tr>
+                <tr>
+                    <td>For how long Has it been around</td>
+                    <td>Developed actively since 2009. HighChart's github
+                        community has all the help required. Click here for help <a
+                            href="https://github.com/highcharts/highcharts">Github Link</a></td>
+                </tr>
+                <tr>
+                    <td>SVG/Canvas</td>
+                    <td>SVG</td>
+                </tr>
+                <tr>
+                    <td>How is the documentation</td>
+                    <td>Highcharts has an excellent documentation with clear instructions.</td>
+                </tr>
+                <tr>
+                    <td>What types of charts are available</td>
+                    <td>line, spline, area, areaspline, column, bar, pie, scatter, gauge, arearange,
+                        areasplinerange and columnrange chart types.</td>
+                </tr>
+                <tr>
+                    <td>Ease of implementation? </td>
+                    <td>Implementing the graph is easy. Documentation clearly helps the user in setting up the charts.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ease to customize? </td>
+                    <td>It takes an effort to go through the documentation in order to customize the charts.
+                        Documentation didn't appear user friendly to me. As it has a lot of content</td>
+                </tr>
+                <tr>
+                    <td>Recommendation to the client</td>
+                    <td>No</td>
+                </tr>
+            </table>
+            <div id="container-chart2" style="width:100%; height:400px;"></div>
+        </div>
+
+        <!-- Canvas JS -->
+        <div class="container container-fluid">
+            <h2>Canvas JS</h2>
+            <p>You can view the documentation <a href="https://canvasjs.com/">here</a>.</p>
+            <table>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Findings</th>
+                </tr>
+                <tr>
+                    <td>Dependency on jQuery</td>
+                    <td>No. However, uses it's own script file.</td>
+                </tr>
+                <tr>
+                    <td>License</td>
+                    <td>Free for Non-Commercial usage. Paid for Commercial</td>
+                </tr>
+                <tr>
+                    <td>Existing Projects</td>
+                    <td>You can view the charts created by CanvasJS <a
+                            href="https://canvasjs.com/samples/dashboards/">here</a>.</td>
+                </tr>
+                <tr>
+                    <td>For how long Has it been around</td>
+                    <td>It was first released in 2013. It is well maintained.</td>
+                </tr>
+                <tr>
+                    <td>SVG/Canvas</td>
+                    <td>Canvas</td>
+                </tr>
+                <tr>
+                    <td>How is the documentation</td>
+                    <td>Documentation is easy to understand. A clear documentation has been provided and community help
+                        can be got<a href="https://canvasjs.com/forums/"> here</a>.</td>
+                </tr>
+                <tr>
+                    <td>What types of charts are available</td>
+                    <td>It supports all the popular charts and graphs. Please refer <a
+                            href="https://canvasjs.com/javascript-charts/">this</a>.</td>
+                </tr>
+                <tr>
+                    <td>Ease of implementation? </td>
+                    <td>Yes. Implementation of this chart is really easy. Authors have well defined steps in the
+                        documenation.</td>
+                </tr>
+                <tr>
+                    <td>Ease to customize? </td>
+                    <td>Yes. Customization of these charts is easy due to the detailed documentation available on the
+                        official site.</td>
+                </tr>
+                <tr>
+                    <td>Recommendation to the client</td>
+                    <td>Yes. However, there is one observation which I made which needs to be kept in mind. the chart
+                        doesn't show up when you work offline.</td>
+                </tr>
+            </table>
+            <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+        </div>
+
+        <div class="container container-fluid">
+            <h2>Conclusion</h2>
+            <p>As per my research I suggest that Paws Rescue group could use ChartJS or CanvasJS. Both the visualization
+                tools are easy to implement. As Paws is a non-commercial organization CanvasJS could be used free by
+                them. However, one additional observation point about Canvasjs is that I couldn't see the chart when
+                I tried veiwing the document offline. i.e., without internet. I wouldn't suggest using "Highcharts" as
+                they are a little difficult to implement and customize. User can get lost in all the documentation that
+                is available on thier official website. Hence, among the 3 charts I have used for Paws, ChartJS would be
+                the most suitable one for the client.</p>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-custom">
+        <small>&copy; Copyright 2019, Paws Rescue group</small>
+    </footer>
+
+    <!-- I ChartJS Documentation -->
+    <!--    1) Create a Chart holder <div> with certain width and height to hold the visualization.
+            2) Use the highcharts CDN. You can refer the documentation for deatiled installation guide.
+            3) Define the data and labels. Customize the chart as required. In the below example I have 
+                customized the animation  options. I have set the chart to 'Pie' using the cutOutPercentage
+                option. I have placed the legend to the bottom using position option. hoverBorderWidth is
+                set to 5 inorder to display a border around the section when hovering. Title has been set to the top
+                and font size is customized as required.-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Animal care and Shelter services', 'General and administration', 'Spay/Neuter Clinic Expense',
+                    'Fundraising', 'Veterinary care', 'Education Program'],
+
+                datasets: [{
+                    data: [8459122, 1129792, 1096338, 942618, 301000, 294773],
+                    backgroundColor: ['indigo', 'yellow', 'blue', 'pink', 'green', 'orange'],
+                    hoverBorderWidth: 5,
+
+                }]
+            },
+            options: {
+                cutoutPercentage: 0,
+                animation: {
+                    animateScale: true,
+                    animateRotate: false,
+                },
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    position: 'top',
+                    text: 'Annual Expense of Dog Shelter in CAD',
+                    fontColor: '#000',
+                    fontSize: 14,
+                },
+                maintainAspectRatio: false,
+            }
+
+        });
+    </script>
+
+    <!-- II Highcharts Documentation -->
+    <!--    1) Create a Chart holder <div> with certain width and height to hold the visualization.
+            2) Use the highcharts CDN
+            3) Define the data and labels. Customize the chart as required. Highcharts is a packed visulaization
+                system. However, using it can become a headache due to it's enormous documentation. Going through
+                it and finding what is suitable for your requirement will be a pain. In the below example I have customized
+                BackgroundColor, borderWidth of the plot. I have played around with the background color gradient
+                using the setOptions. Linear Gradient stops are customized to have gradient in the required area in
+                in the required angle and amount.-->
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myChart = Highcharts.chart('container-chart2', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'Annual Expense of Dog Shelter in CAD'
+                },
+                xAxis: {
+                    categories: ['Animal care and Shelter services', 'General and administration', 'Spay/Neuter Clinic Expense',
+                        'Fundraising', 'Veterinary care', 'Education Program']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Amount Spent'
+                    }
+                },
+                series: [{
+                    name: 'Annual expenditure',
+                    data: [8459122, 1129792, 1096338, 942618, 301000, 294773]
+                }]
+            });
+        });
+
+        Highcharts.setOptions({
+            chart: {
+                backgroundColor: {
+                    linearGradient: [0, 0, 250, 500],
+                    stops: [
+                        [0, 'rgb(255, 255, 255)'],
+                        [1, 'rgb(240, 240, 255)']
+                    ]
+                },
+                borderWidth: 2,
+                plotBackgroundColor: '#676767',
+                plotShadow: true,
+                plotBorderWidth: 1
+            }
+        });
+    </script>
+
+    <!-- III CanvasJS Documentation -->
+    <!--    1) Create a Chart holder <div> with certain width and height to hold the visualization.
+            2) Use the canvasjs CDN
+            3) Define the data and labels. Customize the chart as required. I have customized the chart to
+                set a required animation duration. Theme has been played around to a dark version. the start 
+                angle of the chart is changed to 45degrees. Labels, TooltipContent are adjusted as required. The 
+                FontSize of the label is also customized. This chart visulaization lets the user to import the content 
+                to an external file. However, I have disabled Export feature for this example. Using this chart is easy
+                and the documentation is clear and not so overwhelming.-->
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme: "dark2",
+                exportEnabled: false,
+                animationEnabled: true,
+                animationDuration: 2000,
+                title: {
+                    text: 'Annual Expense of Dog Shelter in CAD'
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 45,
+                    toolTipContent: "<b>{label}</b>: ${y}",
+                    showInLegend: "true",
+                    legendText: "{label}",
+                    indexLabelFontSize: 16,
+                    indexLabel: "{label}",
+                    dataPoints: [
+                        { y: 8459122, label: 'Animal care and Shelter services' },
+                        { y: 1129792, label: 'General and administration' },
+                        { y: 1096338, label: 'Spay/Neuter Clinic Expense' },
+                        { y: 942618, label: 'Fundraising' },
+                        { y: 301000, label: 'Veterinary care' },
+                        { y: 294773, label: 'Education Program' }
+                    ]
+                }]
+            });
+            chart.render();
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

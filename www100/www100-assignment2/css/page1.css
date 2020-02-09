@@ -1,0 +1,133 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	background-color: #FEE19F;
+	background-image: url(../images/body-background.jpg);
+	font-weight: 400;
+}
+
+header, h2, h3, main, #container{
+	-webkit-transition: 2s; /*CSS validation error seen while validating the code.
+	 But, I am okay with this as it's a vendor extension to support older browser versions*/
+    transition: 2s;
+}
+
+header{
+	font-family: 'Roboto Slab', serif;
+	background-color: #735B69;
+	color: #FFF;
+	padding: 2em;
+	border-radius: 0 0 2em 2em;
+	margin-bottom: .5em;
+    box-shadow: -4px 4px 10px rgb(128, 126, 126);
+    background-image: url(../images/body-background.jpg);
+}
+
+header:hover{ 
+    background-color: #FFD0D6;
+    background-image: url(../images/body-background.jpg);
+    color:#5B4852; 
+}
+
+h1{
+	text-align:center;
+	text-shadow: 5px 3px 8px #FEE19F;
+	font-size: 3em;
+}
+
+h2{
+	font-family: 'Roboto Slab', serif;
+	margin-top:0;
+	font-size:1.7em;
+}
+
+h2:hover, h3:hover{ 
+	text-align: center;
+    background-color: #5B4852;
+    color:#FFF;
+    padding: 1em;
+    background-image: url(../images/body-background.jpg);
+}
+
+h3{
+	font-family: 'Roboto Slab', serif;
+	font-size:1.4em;
+	text-shadow: 2px 2px #FEE19F;
+}
+
+h3:hover{ 
+	text-align: left;
+    text-shadow: 0 0;
+}
+
+nav li{
+	list-style: none;
+	text-align: center;
+}
+
+nav a, main, #container{
+	border-radius: 1em;
+	padding: 1em; 
+	color: #5B4852;
+	background-color: #B7DDE0;
+	background-image: url(../images/body-background.jpg);
+}
+
+nav a{
+	box-shadow: -4px 4px 10px rgb(0, 0, 0);
+}
+
+nav a:hover{
+    cursor: pointer;
+}
+
+main, #container{
+	max-width: 90%;
+	margin:auto;
+    box-shadow: -4px 4px 10px rgb(128, 126, 126);
+}
+
+main{
+	display:block;
+	border-bottom: .25em dotted #FEE19F;
+}
+
+main:hover, #container:hover{ 
+    background-color: #FFD0D6;
+    color:#5B4852;
+    padding: 2em;
+}
+
+main ul{
+	display:block;
+	margin-bottom: 0;
+}
+
+#container{
+	margin-bottom: .5em;
+}
+
+img{
+	max-width: 100%;
+	margin:auto;
+	width:350px;
+	height:300px;
+}
+
+#navigation{
+  	position: fixed;
+  	bottom: 20%;
+  	right: 0;
+  	width: 300px;
+}
+
+footer{
+	background-color: #5B4852;
+	background-image: url(../images/body-background.jpg);
+	color: #FFF;
+	padding: 1.5em;
+	border-radius: 2em 2em 0 0;
+	text-align: center;
+	font-size: 1.03em;
+	font-weight: 900;
+}

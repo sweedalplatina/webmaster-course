@@ -1,0 +1,299 @@
+//==VARIABLES
+$base-size: 1rem;
+$margin: 0 auto;
+$margin-zero: 0;
+$margin-auto: auto;
+$half-base-size: ($base-size/2);
+$min-width-fifty: 50px;
+$height-two-hundred: 200px;
+$height: auto;
+$height-fifty-vh: 50vh;
+$padding-zero: 0;
+$padding-one: 1rem;
+$width-seven: ($base-size*7);
+$border-one: 1px;
+$border-ten: 10px;
+
+$bg-white: #FFF;
+$tx-body-color: #2A1D67;
+$bg-color: #EE7601;
+$bg-purple: #683A8B;
+$tx-h1 : #002856;
+$tx-headings: $bg-purple;
+$tx-headings-h3: #EC4455;
+$tx-heading-h4: #52700F;
+$bg-blue: #0271B9;
+
+$font-body: 'Open Sans', sans-serif;
+$font-headings: 'Amiri', serif;
+
+$font-weight-max: 900;
+
+$font-size-one-rem: 1rem;
+$font-size-one-two-five: 1.25rem;
+$font-size-one-five: 1.5rem;
+$font-size-one-seven-five: 1.75rem;
+$font-size-two-two-five: 2.25rem;
+
+$animation-iteration: 3;
+$animation-time: 4s;
+
+//===========FUNCTION==============
+
+//This function doubles the value of input parameter
+@function double-size($input-size){
+    $size : ($input-size * 2);
+    @return $size;
+}
+
+//===========HEADINGS==============
+
+$heading-margin-top: double-size($base-size);    
+$heading-margin-bottom: $half-base-size;
+
+$h1-line-height: 1.1;
+$h2-line-height: 1.25;
+$h3-line-height: $h2-line-height;
+$h4-line-height: 1.15;
+$h5-line-height: $h4-line-height;
+$h6-line-height: $h5-line-height;
+
+$paragraph-margin-top: $base-size;
+$paragraph-margin-bottom: $base-size;
+
+//Variable for setting screen breakpoints
+$screen-breakpoints: (
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1180px
+);
+
+//==============MIXINS============
+
+@mixin for-flex{
+    display:flex;
+    padding: $padding-one;
+}
+
+@mixin for-logo{
+    height: double-size($base-size);
+    width: $width-seven;
+}
+
+@mixin at-breakpoints{
+    @each $name, $width in $screen-breakpoints{
+        @media screen and (min-width: #{$width} ){
+            max-width: $width;
+        }
+    }
+}
+
+@mixin headings{
+    @for $i from 1 through 6{  
+        & > h#{$i}:first-child{  
+            @content;
+        }
+    }
+}
+
+@mixin all-the-headings{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        @content;
+    }
+}
+
+/*============Housekeeping=============*/
+
+:root{
+    font-size:100%;
+}
+
+html{
+    box-sizing: border-box; 
+}
+
+*{
+    box-sizing: inherit; // inherit from the root(parent)
+    &::before,
+    &::after{
+        @extend *;
+    }
+}
+
+body{
+    margin: $margin-zero;
+    color: $tx-body-color;
+    background-color: $bg-white; 
+    font-size: $font-size-one-rem;
+    font-family: $font-body;
+}
+
+@include all-the-headings{
+    margin-top: $heading-margin-top;
+    margin-bottom: $heading-margin-bottom;
+    font-family: $font-headings;
+    font-weight: $font-weight-max;
+}
+
+h1{line-height: $h1-line-height;
+    color: $tx-h1;
+    font-size: $font-size-two-two-five;
+}
+
+h2{line-height: $h2-line-height;
+    text-align:center;
+    color: darken($tx-headings,10%);
+    font-size: $font-size-one-seven-five;
+}
+
+h3{line-height: $h3-line-height;
+    color: darken($tx-headings-h3,20%);
+    font-size: $font-size-one-five;
+}
+
+h4{line-height: $h4-line-height;
+    font-size: $font-size-one-two-five;
+    margin-top: $base-size;
+    color:$tx-heading-h4;
+}
+
+h5{line-height: $h5-line-height;
+    font-size: $font-size-one-rem;
+}
+
+h6{line-height: $h6-line-height;
+    font-size: $font-size-one-rem;
+}
+
+p {
+    margin-top: $paragraph-margin-top;
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+//==========Grid=============
+
+.container{
+    padding: $padding-zero #{$half-base-size};
+    &-fixed{
+        margin: $margin;
+        @include at-breakpoints; 
+    }
+}
+
+.row{
+    margin: $margin;
+    padding: $padding-zero #{$half-base-size};
+    .container &{
+        padding: $padding-zero;
+    }
+}
+
+.col{
+    padding: $padding-zero #{$half-base-size};
+    @include headings {
+        margin-top: ($base-size);
+    }
+}
+
+.m-header, .m-footer{
+    background-color: $bg-color;
+}
+
+.m-banner{
+    @include for-flex;
+    .m-logo {
+        @include for-logo;
+    }
+}
+
+.m-banner-img{
+background-image: url("../images/the-league-of-heroes.jpg");
+height: $height-fifty-vh; 
+background-size:cover;
+background-position: center bottom;
+}
+
+.m-beginings-img{
+    background-image: url("../images/fortress-of-justice.jpg");
+    height: $height-fifty-vh;  
+    background-size:cover;
+    background-position: center center;
+}
+
+@keyframes color-changer {
+    from {
+        background-color: darken($tx-headings-h3,10%);
+    }
+    to {
+        background-color: lighten($bg-color,20%);
+    }
+  }
+
+.heroes{
+    display:flex;
+    flex-flow:row wrap;
+    margin: $margin-auto;
+    justify-content:space-around;
+    .hero{
+        padding: $padding-one;
+        }
+}
+
+.heroes-container{
+    background-color: $bg-color;
+    animation-name: color-changer;
+    animation-duration: $animation-time;
+    animation-iteration-count: $animation-iteration;
+}
+    
+//========Team=========//
+.team{
+    @include for-flex();
+    border: double-size($border-one) solid $bg-purple;
+    border-radius: $border-ten;
+    margin: $base-size $margin-zero;
+    background-color: lighten($bg-blue, 35%);
+    .c-img{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-sizing{
+        height: $height-two-hundred;
+        min-width: $min-width-fifty;
+    }
+    .c-img-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: $padding-one;
+    }
+}
+
+.m-contact{
+    text-align: center;
+}
+
+.m-time{
+    padding: $padding-zero $padding-one $padding-one;
+    table{
+        border-collapse: collapse;
+        background-color: lighten($bg-purple, 45%);
+        margin: $margin-auto;
+    }
+    table, td{
+        border: $border-one solid $bg-purple;
+        padding: $half-base-size; 
+    }
+}
+
+.m-footer{
+    padding: $padding-one;
+    text-align: center;
+}
